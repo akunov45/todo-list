@@ -1,7 +1,7 @@
 .h1{
     color: red;
     position: relative;
-    top: 30px;
+    top: 70px;
 }
 .span{
     color: gray;
@@ -9,5 +9,5 @@
     margin-left: 200px;
     font-size: 30px;
     position: relative;
-    top: -20px;
+    top: 20px;
 }
