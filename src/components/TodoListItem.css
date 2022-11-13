@@ -12,4 +12,10 @@
     cursor: pointer;
     animation: 1.5s;
 }
-
+.todo-name.color{
+    color: blue;
+}
+.todo-nameimportant{
+    flex-grow: 1;
+    color: red;
+}

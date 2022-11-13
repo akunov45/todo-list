@@ -1,15 +1,15 @@
 import TodoListItem from "./TodoListItem";
 
 const TodoList = props => {
-	const { todoData, onDelete, onDone,  } = props;
+	const { todoData, onDelete, onDone, onColor  } = props;
 	return (
 		<ul className="list-group">
 			{todoData.map(todo => {
 				return <li className="list-group-item" key={todo.id}>
                 <TodoListItem
 				{...todo}
-				onDone={onDone} 
-				idTodo={todo.id} 
+				onColor={onColor}
+				onDone={onDone}
 				task={todo.name} 
 				onDelete={onDelete} />
                 </li>;
