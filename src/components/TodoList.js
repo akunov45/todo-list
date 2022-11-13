@@ -1,12 +1,17 @@
 import TodoListItem from "./TodoListItem";
 
 const TodoList = props => {
-	const { todoData } = props;
+	const { todoData, onDelete, onDone,  } = props;
 	return (
 		<ul className="list-group">
 			{todoData.map(todo => {
 				return <li className="list-group-item" key={todo.id}>
-                <TodoListItem task={todo.name} day={30} />
+                <TodoListItem
+				{...todo}
+				onDone={onDone} 
+				idTodo={todo.id} 
+				task={todo.name} 
+				onDelete={onDelete} />
                 </li>;
 			})}
 		</ul>
@@ -14,3 +19,5 @@ const TodoList = props => {
 };
 
 export default TodoList;
+
+

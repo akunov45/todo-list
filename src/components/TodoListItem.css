@@ -1,6 +1,15 @@
 .todo-name{
     flex-grow: 1;
+    cursor: pointer;
+    animation: 2s linear;
 }
 .btn{
     margin-right: 10px;
 }
+.todo-namedone{
+    flex-grow: 1;
+    text-decoration: line-through;
+    cursor: pointer;
+    animation: 1.5s;
+}
+
