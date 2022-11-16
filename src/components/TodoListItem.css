@@ -1,21 +1,31 @@
-.todo-name{
-    flex-grow: 1;
-    cursor: pointer;
-    animation: 2s linear;
+.todo-name {
+  flex-grow: 1;
+  cursor: pointer;
+  animation: 2s linear;
 }
-.btn{
-    margin-right: 10px;
+
+.btn {
+  margin-right: 10px;
 }
-.todo-namedone{
-    flex-grow: 1;
-    text-decoration: line-through;
-    cursor: pointer;
-    animation: 1.5s;
+
+.todo-namedone {
+  flex-grow: 1;
+  text-decoration: line-through;
+  cursor: pointer;
+  animation: 1.5s;
 }
-.todo-name.color{
-    color: blue;
+
+.todo-name.color {
+  color: blue;
 }
-.todo-nameimportant{
-    flex-grow: 1;
-    color: red;
+
+.todo-nameimportant {
+  flex-grow: 1;
+  color: red;
+}
+
+.todo-namedoneimportant {
+  flex-grow: 1;
+  color: red;
+  text-decoration: line-through;
 }

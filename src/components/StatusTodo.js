@@ -1,13 +1,28 @@
-import React from 'react'
-import './StatusTodo.css'
-const StatusTodo = () => {
-  return (
-    <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
-    <button type="button" class="btn btn-outline-info">All</button>
-    <button type="button" class="btn btn-outline-danger">Active</button>
-    <button type="button" class="btn btn-outline-success">Done</button>
-  </div>
-  )
-}
+import React from "react";
+import "./StatusTodo.css";
+const StatusTodo = ({ onSetStatus, status }) => {
+	const btns = [
+		{ status: "all", btnName: "All" },
+		{ status: "active", btnName: "Active" },
+		{ status: "done", btnName: "Done" },
+	];
 
-export default StatusTodo
+	return (
+		<div className='btn-group'>
+			{btns.map(btn => {
+				let isActive = btn.status === status; // true
+				let activeClass = isActive ? "btn-info" : "btn-outline-secondary";
+				return (
+					<button
+						key={btn.status}
+						onClick={() => onSetStatus(btn.status)}
+						className={`btn ${activeClass}`}>
+						{btn.btnName}
+					</button>
+				);
+			})}
+		</div>
+	);
+};
+
+export default StatusTodo;

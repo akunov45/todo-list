@@ -1,25 +1,8 @@
-.h1{
-    color: red;
-    position: relative;
-    top: 70px;
-    animation: 1.2s bgrandom infinite;
+.h1 {
+	color: red;
+	flex-grow: 1;
 }
-.span{
-    color: gray;
-    margin: 0;
-    margin-left: 200px;
-    font-size: 30px;
-    position: relative;
-    top: 20px;
+.span {
+	color: gray;
+	font-size: 30px;
 }
-
-@keyframes bgrandom {
-    0% { background: linear-gradient(90deg, rgba(255,255,255,0.98) 50%, rgba(255,255,255,0.96) 0%); }
-    50% { background: linear-gradient(90deg, rgba(255,255,255,0.98) 50%, rgba(255,255,255,0.96) 0%); }
-
-    55% { background: linear-gradient(90deg,  rgba(255,255,255,0.96) 50%, rgba(255,255,255,0.98) 0%); }
-    80% { background: linear-gradient(90deg, rgba(255,255,255,0.96)  50%, rgba(255,255,255,0.98) 0%); }
-
-    85% { background: linear-gradient(90deg, rgba(255,255,255,0.96) 50%, rgba(255,255,255,0.94) 0%); }
-    100% { background: linear-gradient(90deg, rgba(255,255,255,0.96) 50%, rgba(255,255,255,0.94) 0%); }
-    }
